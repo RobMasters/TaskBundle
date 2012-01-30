@@ -1,11 +1,11 @@
 <?php
+use Symfony\Component\ClassLoader\UniversalClassLoader;
 
 if (file_exists($file = __DIR__ . '/../vendor/.composer/autoload.php')) {
     $autoload = require_once $file;
 } else {
     require_once $_SERVER['SYMFONY'].'/Symfony/Component/ClassLoader/UniversalClassLoader.php';
 
-    use Symfony\Component\ClassLoader\UniversalClassLoader;
 
     $loader = new UniversalClassLoader();
     $loader->registerNamespace('Symfony', $_SERVER['SYMFONY']);
