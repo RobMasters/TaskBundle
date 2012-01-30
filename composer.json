@@ -1,0 +1,25 @@
+{
+    "name": "rob-masters/task-bundle",
+    "description": "Symfony2 bundle to provide a framework for interacting with the processing of a task/set of tasks using dedicated listeners",
+    "keywords": ["symfony2", "task", "event"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [{
+        "name" : "Rob Masters",
+        "email" : "rob@enginepowered.co.uk"
+    },
+    {
+        "name" : "Rob Masters",
+        "email" : "rob@enginepowered.co.uk"
+    }],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/framework-bundle" : ">=2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "RobMasters\\Bundle\\TaskBundle\\": ""
+        }
+    },
+    "target-dir" : "RobMasters/Bundle/TaskBundle"
+}
